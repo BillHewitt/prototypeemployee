@@ -329,6 +329,9 @@ class PagesController < ApplicationController
   def splashmanager
   end
 
+  def premium3
+  end
+
 
 
   def static

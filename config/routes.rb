@@ -121,6 +121,7 @@ Rails.application.routes.draw do
   get 'pages/holiday3'
   get 'pages/engagement'
   get 'pages/premium2'
+  get 'pages/premium3'
   get 'pages/busu'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
