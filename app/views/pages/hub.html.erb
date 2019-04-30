@@ -10,20 +10,14 @@
 
 
 <div class="container">
-  <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Your Teams</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">The Whole Company</a>
-    </li>
-  </ul>
-  <br>
+  
+
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <div class="row mb-4">
           <div class="col-md-8 col-lg-8">
             <div class="pr-lg-4">
+              <br>
               <%= render 'layouts/filtershub' %>
               <div class="card card-customer-1">
                 <div class="card-body py-5">
@@ -82,6 +76,43 @@
                           <input type="radio" name="options" id="option3" autocomplete="off"> Nothing, I'm a scrooge
                         </label>
                       </div>
+                        <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <span class="float-right">
+                    <a data-toggle="tooltip" data-placement="top" title="" data-original-title="Add comment"><i class="fa fa-comments mr-3"></i>
+
+                     </a><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"><i class="fa fa-smile-o mr-3"></i>
+                  </a></span><a data-toggle="tooltip" data-placement="top" title="" data-original-title="Emoji"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pr-lg-4">
+              <div class="card card-customer-1">
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <span class="avatar rounded-circle">
+                            <img src="/avatar.png" class="avatar avatar-lg m-1">
+                          </span>
+                    </div>
+                    <div class="col-md-10">
+                      
+                      <h4>More access to C-level</h4>
+                      <p class="text-muted small">Ask C-Level Created By HR Manager · 8 days ago for <span class="badge badge-pill badge-secondary small">Company Value</span></p>
+                      <p class="">
+                        Hey one and all. We've been getting more and more feedback that you all feel you're not clear on the company strategy - and that you don't feel like you get enough time to pick the brains of our C-level. So now's your chance. Submit your questions below and next Friday, we'll be hosting an all hands where you'll get to hear the answers. Questions need to be submitted by next Wednesday please.
+                      </p>
+                      <form>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlInput1">What's your question?</label>
+                                    <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Let us know your question">
+                                  </div>
+                                 </form>
+                                 <a href="" class="btn btn-light" role="button">Submit Question</a>
                         <br>
                     </div>
                   </div>
@@ -200,10 +231,12 @@
 
 
 
+
+
           <div class="col-md-4 col-lg-4">
           
               <div class="sticky-top">
-            <div class="card-body mt-3">
+            <div class="card-body mt-5">
                 <h4 class="text-default">Have your say</h4>
                 <p class="mt-3">Send us feedback to help make our company a better place to work</p>
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-modal9">
